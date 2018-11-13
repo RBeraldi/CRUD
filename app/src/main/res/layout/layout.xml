@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rootView"
+    >
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_weight="1"
+        >
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="6"
+        >
+
+        <Button
+            android:id="@+id/create"
+            android:onClick="create"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CREATE"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <Button
+            android:id="@+id/read"
+            android:onClick="read"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="READ"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_dialog_info" />
+
+
+        <Button
+            android:id="@+id/readAll"
+            android:onClick="readAll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ALL"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_dialog_info" />
+
+
+        <Button
+            android:id="@+id/update"
+            android:onClick="update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="UPDATE"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_input_get" />
+
+        <Button
+            android:id="@+id/delete"
+            android:onClick="delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="DELETE"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_delete" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
